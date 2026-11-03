@@ -3,7 +3,7 @@ name: Host-Ship Auto Renew
 on:
   schedule:
     # 每 10 天检查一次续期：每月 1/11/21 日 UTC 13:30（北京时间 21:30）
-    - cron: '30 13 */10 * *'
+    - cron: '30 13 */7 * *'
   workflow_dispatch:
 
 # actions: write 用于运行结束后清理历史运行记录；contents: read 供 checkout 使用
