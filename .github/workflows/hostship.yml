@@ -3,6 +3,7 @@ name: Host-Ship Auto Renew
 on:
   schedule:
     # 每 3 天检查一次续期：UTC 13:56（北京时间 21:56）
+    # 2026-11-18 重新注册定时：fork 后 schedule 未生效，推提交强制 GitHub 重新注册
     - cron: '56 13 */3 * *'
   workflow_dispatch:
 
